@@ -107,7 +107,22 @@
 			}
 		},
 		"extends": {
-			"extensions": {}
+			"extensions": {
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "YTAI_PG10.ext.controller.CustomFilter"
+					}
+				},
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"SmartFilterBarControlConfigurationExtension|YSAMPLE_DDL010": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "YTAI_PG10.ext.fragment.Customfilter",
+							"type": "XML"
+						}
+					}
+				}
+			}
 		},
 		"contentDensities": {
 			"compact": true,
@@ -145,5 +160,9 @@
 	},
 	"sap.platform.hcp": {
 		"uri": ""
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/ytai_lr10/webapp",
+		"_version": "1.1.0"
 	}
 }

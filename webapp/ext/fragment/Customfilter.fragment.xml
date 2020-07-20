@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartfilterbar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+	<smartfilterbar:ControlConfiguration key="pricerange" index="1" label="Custom Filter" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="SelMode">
+				<core:Item key="0" text="品目別"/>
+				<core:Item key="1" text="仕入先別"/>
+				<core:Item key="2" text="メーカ別"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>
